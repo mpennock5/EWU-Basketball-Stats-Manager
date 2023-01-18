@@ -1,0 +1,17 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+  "name": "EWU-Basketball-Stats-Manager",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
