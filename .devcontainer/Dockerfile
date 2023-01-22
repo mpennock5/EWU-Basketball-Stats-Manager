@@ -3,13 +3,13 @@ FROM node:18
 # Install basic development tools
 RUN apt update && apt install -y less man-db sudo
 
-RUN yarn add @mui/material @emotion/react @emotion/styled
+RUN npm add @mui/material @emotion/react @emotion/styled
 
-RUN yarn add @remix-run/react @remix-run/node @remix-run/serve
+RUN npm add @remix-run/react @remix-run/node @remix-run/serve
 
-RUN yarn add -D @remix-run/dev
+RUN npm add -D @remix-run/dev
 
-RUN yarn install
+RUN npm install
 
 # Ensure default `node` user has access to `sudo`
 ARG USERNAME=node
