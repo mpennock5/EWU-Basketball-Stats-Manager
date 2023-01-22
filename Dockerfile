@@ -1,10 +1,11 @@
 FROM node:latest
-WORKDIR /usr/app
 
-COPY package.json yarn.lock ./
+RUN mkdir -p /app
 
-RUN yarn
+COPY . /app
 
-COPY . .
+RUN cd /app && yarn install
+
+ENTRYPOINT ["yarn", "start"]
 
 EXPOSE 3000
