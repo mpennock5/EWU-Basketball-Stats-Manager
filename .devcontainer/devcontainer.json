@@ -2,7 +2,7 @@
 {
   "name": "EWU-Basketball-Stats-Manager",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "../Dockerfile"
   },
   "customizations": {
     "vscode": {
@@ -13,5 +13,6 @@
         "dbaeumer.vscode-eslint"
       ]
     }
-  }
+  },
+  "forwardPorts": [3000, 3000]
 }
