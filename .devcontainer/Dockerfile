@@ -1,20 +1,10 @@
-FROM node:18
+FROM node:18-alpine
 
-# Install basic development tools
-RUN apt update && apt install -y less man-db sudo
+RUN apk update && apk add git
 
-RUN yarn add @mui/material @emotion/react @emotion/styled
+RUN mkdir /EWU-Basketball-Stats-Manager
+COPY . /EWU-Basketball-Stats-Manager
+WORKDIR /EWU-Basketball-Stats-Manager
+ENV PATH /EWU-Basketball-Stats-Manager/node_modules/.bin:$PATH
 
-RUN yarn add @remix-run/react @remix-run/node @remix-run/serve
-
-RUN yarn add -D @remix-run/dev
-
-RUN yarn install
-
-# Ensure default `node` user has access to `sudo`
-ARG USERNAME=node
-RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-    && chmod 0440 /etc/sudoers.d/$USERNAME
-
-# Set `DEVCONTAINER` environment variable to help with orientation
-ENV DEVCONTAINER=true
+RUN yarn
