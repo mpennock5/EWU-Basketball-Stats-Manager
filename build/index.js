@@ -174,80 +174,40 @@ var routes_exports = {};
 __export(routes_exports, {
   default: () => Index
 });
-var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
+var import_material = require("@mui/material"), import_react3 = require("@remix-run/react"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { children: "Welcome to Remix" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_material.AppBar, { sx: { backgroundColor: "#A10022" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Link, { to: "/index", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+    "img",
+    {
+      style: { width: "50px" },
+      src: "https://cdn.ewu.edu/wp-content/themes/ewu-2018/assets/ewuEagle.png",
+      alt: "logo"
+    },
+    void 0,
+    !1,
+    {
       fileName: "app/routes/index.tsx",
-      lineNumber: 4,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("ul", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
-        "a",
-        {
-          target: "_blank",
-          href: "https://remix.run/tutorials/blog",
-          rel: "noreferrer",
-          children: "15m Quickstart Blog Tutorial"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/index.tsx",
-          lineNumber: 7,
-          columnNumber: 11
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/index.tsx",
-        lineNumber: 6,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
-        "a",
-        {
-          target: "_blank",
-          href: "https://remix.run/tutorials/jokes",
-          rel: "noreferrer",
-          children: "Deep Dive Jokes App Tutorial"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/index.tsx",
-          lineNumber: 16,
-          columnNumber: 11
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/index.tsx",
-        lineNumber: 15,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("a", { target: "_blank", href: "https://remix.run/docs", rel: "noreferrer", children: "Remix Docs" }, void 0, !1, {
-        fileName: "app/routes/index.tsx",
-        lineNumber: 25,
-        columnNumber: 11
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/index.tsx",
-        lineNumber: 24,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/index.tsx",
-      lineNumber: 5,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
+      lineNumber: 10,
+      columnNumber: 11
+    },
+    this
+  ) }, void 0, !1, {
     fileName: "app/routes/index.tsx",
-    lineNumber: 3,
+    lineNumber: 8,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/index.tsx",
+    lineNumber: 7,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/index.tsx",
+    lineNumber: 6,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "7503f95e", entry: { module: "/build/entry.client-32Q6LXWO.js", imports: ["/build/_shared/chunk-TY4X4K57.js", "/build/_shared/chunk-EETRBLDB.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SKTENJRH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-AQBQHSOW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, url: "/build/manifest-7503F95E.js" };
+var assets_manifest_default = { version: "f9a036df", entry: { module: "/build/entry.client-MR65O4CY.js", imports: ["/build/_shared/chunk-HEAZXX2O.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CNTMNWBL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-XQAOVSTN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, url: "/build/manifest-F9A036DF.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !1, v2_meta: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
