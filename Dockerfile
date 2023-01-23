@@ -1,16 +1,11 @@
-FROM node:latest
+FROM node:16-alpine
+RUN apk update && apk add git
+WORKDIR /usr/server/app
 
-RUN mkdir -p /app
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm run build
+ENV NODE_ENV=production
+CMD ["yarn", "run" ,"dev"] 
 
-COPY package.json /app
-CMD yarn run build
-
-COPY ./app /app/app
-
-COPY ./build /app/build
-
-RUN cd /app && yarn install
-
-ENTRYPOINT ["yarn", "--cwd", "/app", "run", "dev"]
-
-EXPOSE 3000
