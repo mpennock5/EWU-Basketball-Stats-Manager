@@ -1,5 +1,7 @@
 FROM node:latest
 
+RUN yarn install
+
 RUN mkdir -p /app
 
 COPY package.json /app
