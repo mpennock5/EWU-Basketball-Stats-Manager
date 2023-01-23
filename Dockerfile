@@ -3,7 +3,7 @@ FROM node:latest
 RUN mkdir -p /app
 
 COPY package.json /app
-CMD yarn build
+CMD yarn run build
 
 COPY ./app /app/app
 
