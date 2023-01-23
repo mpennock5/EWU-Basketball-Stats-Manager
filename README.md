@@ -1,8 +1,16 @@
-# Welcome to Remix!
+# Steps before starting development
 
-- [Remix Docs](https://remix.run/docs)
+- ## install docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
-## Development
+- ## install VS Code [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+- ## add Remote Development Extension to VS Code
+
+- ## Pull down Repo
+
+- ## remote into devContainer using the bottom left green box.
+
+# Development
 
 From your terminal:
 
