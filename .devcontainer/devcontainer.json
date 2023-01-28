@@ -14,9 +14,7 @@
       ]
     }
   },
-  "mounts": [
-    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind",
-  ],
+  "mounts": ["source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"],
   "postCreateCommand": "npm install",
   "forwardPorts": [3000, 3000]
 }
