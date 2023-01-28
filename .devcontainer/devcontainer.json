@@ -15,8 +15,8 @@
     }
   },
   "overrideCommand": false,
-  "remoteUser": "root",
-  "mounts": ["source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"],
+  // "remoteUser": "root",
+  "mounts": ["source=${localEnv:HOME}/.ssh,target=/home/root/.ssh,type=bind"],
   "postCreateCommand": "npm install",
   "forwardPorts": [3000, 3000]
 }
