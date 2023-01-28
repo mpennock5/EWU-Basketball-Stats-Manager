@@ -17,7 +17,6 @@
   "overrideCommand": false,
   "remoteUser": "root",
   "mounts": ["source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"],
-  "postCreateCommand": "",
   "postAttachCommand": "eval $(ssh-agent -s) && find /home/vscode/.ssh/ -type f -exec grep -l 'PRIVATE' {} \\; | xargs ssh-add",
   "forwardPorts": [3000, 3000]
 }
