@@ -4,13 +4,17 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-vscode-remote.remote-containers",
         "esbenp.prettier-vscode",
         "streetsidesoftware.code-spell-checker",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "ms-dotnettools.csharp"
       ]
     }
   },
