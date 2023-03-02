@@ -1,9 +1,9 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material';
 
 const colors = {
-  black: "#000000",
-  white: "#ffffff",
-  red: "#b7142e",
+  black: '#000000',
+  white: '#ffffff',
+  red: '#b7142e',
 };
 
 const theme = createTheme({
@@ -13,8 +13,8 @@ const theme = createTheme({
         {
           props: {},
           style: {
-            fontFamily: "Tilt Warp",
-            fontSize: "16px",
+            fontFamily: 'Tilt Warp',
+            fontSize: '16px',
           },
         },
       ],
@@ -22,45 +22,45 @@ const theme = createTheme({
     MuiTypography: {
       variants: [
         {
-          props: { variant: "h1" },
+          props: { variant: 'h1' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
         {
-          props: { variant: "h1" },
+          props: { variant: 'h1' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
         {
-          props: { variant: "h2" },
+          props: { variant: 'h2' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
         {
-          props: { variant: "h3" },
+          props: { variant: 'h3' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
         {
-          props: { variant: "h4" },
+          props: { variant: 'h4' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
         {
-          props: { variant: "h5" },
+          props: { variant: 'h5' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
         {
-          props: { variant: "h6" },
+          props: { variant: 'h6' },
           style: {
-            fontFamily: "Tilt Warp",
+            fontFamily: 'Tilt Warp',
           },
         },
       ],
@@ -77,8 +77,8 @@ const theme = createTheme({
       main: colors.white,
     },
     text: {
-      primary: colors.white,
-      secondary: colors.red,
+      primary: colors.black,
+      secondary: colors.white,
     },
   },
 });

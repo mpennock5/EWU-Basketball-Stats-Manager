@@ -1,11 +1,13 @@
-import { ThemeProvider } from "@mui/material";
-import Nav from "~/components/Nav";
-import theme from "~/palette/pallette";
+import HomeBanner from '~/components/HomeBanner';
+import { ThemeProvider } from '@mui/material';
+import HomeNavBar from '~/components/HomeNavBar';
+import theme from '~/palette/pallette';
 
 export default function Index() {
   return (
     <ThemeProvider theme={theme}>
-      <Nav />
+      <HomeNavBar />
+      <HomeBanner />
     </ThemeProvider>
   );
 }
