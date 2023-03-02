@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -6,22 +6,26 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from '@remix-run/react';
+} from "@remix-run/react";
 
 export const meta: MetaFunction = () => ({
-  charset: 'utf-8',
-  title: 'EWU Basketball Stats Manager',
-  viewport: 'width=device-width,initial-scale=1',
+  charset: "utf-8",
+  title: "EWU Basketball Stats Manager",
+  viewport: "width=device-width,initial-scale=1",
 });
 
 export default function App() {
   return (
     <html lang="en">
       <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+          rel="stylesheet"
+        />
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ margin: "0px" }}>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
