@@ -6,10 +6,8 @@ import theme from '~/palette/pallette';
 export default function Index() {
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        <HomeNavBar />
-        <HomeBanner />
-      </div>
+      <HomeNavBar />
+      <HomeBanner />
     </ThemeProvider>
   );
 }
