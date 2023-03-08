@@ -1,5 +1,6 @@
-import { redirect } from '@remix-run/node';
+import { Outlet } from '@remix-run/react';
 
-export default function Index() {
-  return redirect('/my-team');
-}
+const Index = () => {
+  return <Outlet />;
+};
+export default Index;
