@@ -1,7 +1,13 @@
+import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 import { Typography } from '@mui/material';
 import EwuLogo from './EwuLogo';
 
-const HomeBanner = () => {
+interface props {
+  children: JSX.Element[];
+}
+
+const HomeBanner = (props: props) => {
+  const children = props.children;
   return (
     <div
       style={{
@@ -12,13 +18,16 @@ const HomeBanner = () => {
         backgroundImage: 'linear-gradient(to right, #b7142e, #5e0816',
       }}
     >
-      <Typography
-        style={{ paddingLeft: '1em' }}
-        variant="h3"
-        color="text.secondary"
+      <div
+        style={{ display: 'flex', flexDirection: 'column', paddingLeft: '3em' }}
       >
-        EASTERN WASHINGTON UNIVERSITY
-      </Typography>
+        <Typography variant="h3" color="text.secondary">
+          EASTERN WASHINGTON UNIVERSITY
+        </Typography>
+        <div style={{ display: 'flex', gap: '1em', paddingTop: '4px' }}>
+          {children}
+        </div>
+      </div>
       <div style={{ paddingRight: '1em' }}>
         <EwuLogo />
       </div>

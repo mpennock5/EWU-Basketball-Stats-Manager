@@ -1,5 +1,7 @@
-import { redirect } from '@remix-run/node';
+// import { redirect } from '@remix-run/node';
 
-export default function Index() {
-  return redirect('/my-team');
-}
+const Index = () => {
+  return <></>;
+  //redirect('/my-team')}
+};
+export default Index;

@@ -23,7 +23,6 @@ export default function App() {
     <Document>
       <ThemeProvider theme={theme}>
         <HomeNavBar />
-        <HomeBanner />
         <Outlet />
       </ThemeProvider>
     </Document>
