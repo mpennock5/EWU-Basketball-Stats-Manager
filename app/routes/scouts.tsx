@@ -5,12 +5,24 @@ import HomeBanner from '~/components/HomeBanner';
 
 const buttons = [
   {
-    name: 'All Teams',
-    to: '/opponents/all-teams',
+    name: 'Opponent Scouts',
+    to: 'opponent-scouts',
   },
   {
-    name: 'Scheduled',
-    to: '/opponents/scheduled',
+    name: 'Self Scouts',
+    to: 'self-scouts',
+  },
+  {
+    name: 'Offline Scouts',
+    to: 'offline-scouts',
+  },
+  {
+    name: 'Templates',
+    to: 'templates',
+  },
+  {
+    name: 'Archived',
+    to: 'archived',
   },
 ];
 

@@ -8,7 +8,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import HomeBanner from './components/HomeBanner';
 import HomeNavBar from './components/HomeNavBar';
 import theme from './styles/pallette';
 

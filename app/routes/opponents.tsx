@@ -6,11 +6,11 @@ import HomeBanner from '~/components/HomeBanner';
 const buttons = [
   {
     name: 'All Teams',
-    to: '/opponents/all-teams',
+    to: 'all-teams',
   },
   {
     name: 'Scheduled',
-    to: '/opponents/scheduled',
+    to: 'scheduled',
   },
 ];
 

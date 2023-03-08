@@ -5,12 +5,12 @@ import HomeBanner from '~/components/HomeBanner';
 
 const buttons = [
   {
-    name: 'All Teams',
-    to: '/opponents/all-teams',
+    name: 'Plays',
+    to: 'plays',
   },
   {
-    name: 'Scheduled',
-    to: '/opponents/scheduled',
+    name: 'Playbook',
+    to: 'playbook',
   },
 ];
 

@@ -6,19 +6,19 @@ import HomeBanner from '~/components/HomeBanner';
 const buttons = [
   {
     name: 'Analytics',
-    to: '/my-team/analytics',
+    to: 'analytics',
   },
   {
     name: 'Schedule',
-    to: '/my-team/schedule',
+    to: 'schedule',
   },
   {
     name: 'Roster',
-    to: '/my-team/roster',
+    to: 'roster',
   },
   {
     name: 'Self Scouts',
-    to: '/my-team/self-scouts',
+    to: 'self-scouts',
   },
 ];
 
