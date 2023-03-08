@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@mui/material';
 import type { MetaFunction } from '@remix-run/node';
 import {
   Links,
@@ -7,6 +8,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import HomeBanner from './components/HomeBanner';
+import HomeNavBar from './components/HomeNavBar';
+import theme from './styles/pallette';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -15,6 +19,22 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  return (
+    <Document>
+      <ThemeProvider theme={theme}>
+        <HomeNavBar />
+        <HomeBanner />
+        <Outlet />
+      </ThemeProvider>
+    </Document>
+  );
+}
+
+interface Props {
+  children?: React.ReactNode;
+}
+
+function Document({ children }: Props) {
   return (
     <html lang="en">
       <head>
@@ -26,7 +46,7 @@ export default function App() {
         <Links />
       </head>
       <body style={{ margin: '0px' }}>
-        <Outlet />
+        {children}
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

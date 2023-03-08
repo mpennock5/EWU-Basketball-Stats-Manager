@@ -1,13 +1,5 @@
-import HomeBanner from '~/components/HomeBanner';
-import { ThemeProvider } from '@mui/material';
-import HomeNavBar from '~/components/HomeNavBar';
-import theme from '~/palette/pallette';
+import { redirect } from '@remix-run/node';
 
 export default function Index() {
-  return (
-    <ThemeProvider theme={theme}>
-      <HomeNavBar />
-      <HomeBanner />
-    </ThemeProvider>
-  );
+  return redirect('/my-team');
 }

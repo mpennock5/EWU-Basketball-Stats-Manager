@@ -1,32 +1,35 @@
 import { AppBar, Button, Toolbar } from '@mui/material';
+import { Link } from '@remix-run/react';
 
 const buttons = [
   {
     name: 'My Team',
-    path: '',
+    to: '/my-team',
   },
   {
     name: 'Opponents',
-    path: '',
+    to: '/opponents',
   },
   {
     name: 'Scouts',
-    path: '',
+    to: '/scouts',
   },
   {
     name: 'Plays',
-    path: '',
+    to: '/plays',
   },
   {
     name: 'Videos',
-    path: '',
+    to: '/videos',
   },
 ];
 
 const buttonList = buttons.map((button) => (
-  <Button color="info" key={button.name}>
-    {button.name}
-  </Button>
+  <Link style={{ textDecoration: 'none' }} to={button.to} key={button.name}>
+    <Button color="info" key={button.name}>
+      {button.name}
+    </Button>
+  </Link>
 ));
 
 const HomeNavBar = () => {
