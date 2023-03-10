@@ -1,7 +1,5 @@
-import Plays from './plays';
+import { redirect } from '@remix-run/node';
 
-const index = () => {
-  return <Plays></Plays>;
+export const loader = () => {
+  return redirect('plays');
 };
-
-export default index;

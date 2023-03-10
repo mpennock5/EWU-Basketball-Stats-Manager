@@ -1,7 +1,5 @@
-import Analytics from './analytics';
+import { redirect } from '@remix-run/node';
 
-const index = () => {
-  return <Analytics></Analytics>;
+export const loader = () => {
+  return redirect('analytics');
 };
-
-export default index;

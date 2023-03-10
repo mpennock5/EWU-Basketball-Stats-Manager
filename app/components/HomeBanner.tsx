@@ -1,4 +1,3 @@
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 import { Typography } from '@mui/material';
 import EwuLogo from './EwuLogo';
 
