@@ -1,7 +1,5 @@
-import AllTeams from './all-teams';
+import { redirect } from '@remix-run/node';
 
-const index = () => {
-  return <AllTeams></AllTeams>;
+export const loader = () => {
+  return redirect('all-teams');
 };
-
-export default index;

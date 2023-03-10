@@ -1,7 +1,5 @@
-import OpponentScouts from './opponent-scouts';
+import { redirect } from '@remix-run/node';
 
-const index = () => {
-  return <OpponentScouts></OpponentScouts>;
+export const loader = () => {
+  return redirect('opponent-scouts');
 };
-
-export default index;

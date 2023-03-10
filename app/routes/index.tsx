@@ -1,6 +1,5 @@
-import { Outlet } from '@remix-run/react';
+import { redirect } from '@remix-run/node';
 
-const Index = () => {
-  return <Outlet />;
+export const loader = () => {
+  return redirect('/my-team');
 };
-export default Index;

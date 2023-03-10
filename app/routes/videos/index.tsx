@@ -1,7 +1,5 @@
-import Videos from './videos';
+import { redirect } from '@remix-run/node';
 
-const index = () => {
-  return <Videos></Videos>;
+export const loader = () => {
+  return redirect('videos');
 };
-
-export default index;
