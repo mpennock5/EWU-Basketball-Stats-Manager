@@ -1,12 +1,8 @@
 import { Typography } from '@mui/material';
 import EwuLogo from './EwuLogo';
 
-interface props {
-  children: JSX.Element[];
-}
-
-const HomeBanner = (props: props) => {
-  const children = props.children;
+const HomeBanner = (props: { children?: JSX.Element | JSX.Element[] }) => {
+  const { children } = props;
   return (
     <div
       style={{
