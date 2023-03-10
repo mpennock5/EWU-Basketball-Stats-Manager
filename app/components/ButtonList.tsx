@@ -15,7 +15,7 @@ const ButtonList = (props: { buttons: IButton[] }) => {
           key={button.name}
         >
           <Button
-            sx={{ padding: '0px 6px' }}
+            sx={{ padding: '0em .5em' }}
             onClick={() => setSelected(button.name)}
             color="info"
             key={button.name}
