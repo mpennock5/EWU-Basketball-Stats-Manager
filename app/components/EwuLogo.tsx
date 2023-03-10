@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 
 const EwuLogo = (props: { size?: string }) => {
-  const size = props.size === undefined ? '120px' : props.size;
+  const size = props.size === undefined ? '7.5em' : props.size;
   return (
     <Box height={size} width={size}>
       <svg

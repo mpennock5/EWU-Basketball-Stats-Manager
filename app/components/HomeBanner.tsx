@@ -7,7 +7,6 @@ const HomeBanner = (props: { children?: JSX.Element | JSX.Element[] }) => {
     <Stack
       direction="row"
       justifyContent="space-between"
-      height="auto"
       p={2}
       style={{
         background: 'linear-gradient(to right, #b7142e, #5e0816',
